@@ -260,3 +260,9 @@ p {
     text-align: right;
     align-self: flex-end;
 }
+
+
+.rounded-border {
+  border: 2px solid lightgray;
+  border-radius: 10px;
+}
