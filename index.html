@@ -4,56 +4,39 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"/>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 	<script src="index.js"></script>
 	<link rel="stylesheet" type="text/css" href="index.css"/>
 
 	<title>首頁</title>
 	<link href="res/icon.png" rel="icon">
 
-	<link rel="stylesheet" type="text/css" href="css/main.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
 
-<img src="res/AboutUs/new-drone.png" class="drone"/>
-<div>
-	<br>
-	<br>
-	<section id="section2">
-		<h1>關於我們 About Us</h1>
-		<div class="PicContainer">
-			<div class="Pic">
-				<div class="pic1">
-				</div>
-				<div class="pic2">
-				</div>
-				<div class="pic3">
-				</div>
-				<div class="pic4">
-				</div>
-				<div class="pic5">
-				</div>
-				<div class="pic6">
-				</div>
+<div class="container">
+	<img src="res/Home/slogan.png" class="slogan"/>
+	<h1 class="title">
+		<span>關於我們</span> <span>About Us</span>
+	</h1>
+	<div id="members" class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4 mb-5"></div>
+	<div class="row justify-content-center mb-5">
+		<div class="intro card col-11 col-lg-8">
+			<h1 class="card-title">團隊介紹</h1>
+			<div class="card-body">
+				本團隊核心成員由不同領域的學生組成，核心成員已經在相關政府以及企業競賽中合作將近1年半的期間，在此段時間也提出多個創意企劃，也在競賽中有所收穫。本團隊不以純粹創意發想為主，而是在「創意」與「實踐性」間找出平衡。
 			</div>
 		</div>
-	</section>
-</div>
-<div class="sianup myDiv rounded-border">
-	<br>
-	<h1 class="signtitle">團隊介紹</h1><br>
-	<br>
-	<p class="ech">本團隊核心成員由不同領域的學生組成，核心成員已經在相關政府以及企業競賽中合作將近1年半的期間，在此段時間也提出多個創意企劃
-		，也在競賽中有所收穫。本團隊不以純粹創意發想為主，而是在「創意」與「實踐性」間找出平衡。 </p>
+	</div>
+	<script src="js/mainPage.js"></script>
 </div>
 
+<div id="downloadModal"></div>
 <footer></footer>
 </body>
 </html>

@@ -1,6 +1,7 @@
 /*Body*/
-.intro {
-	border-radius: 20px;
+.intro, .calculate {
+	background: #303030;
+	--bs-card-border-radius: 20px;
 }
 
 .intro .card-title {
@@ -11,8 +12,11 @@
 	text-decoration-color: #f9d237;
 }
 
+.intro .card-text {
+	font-size: 20px;
+}
+
 .intro .carousel-inner {
-	background: #888;
 	border-radius: 20px;
 	max-height: 60vh;
 
@@ -35,6 +39,11 @@
 	height: auto;
 }
 
+.intro strong {
+	font-size: 30px;
+	color: #1eab45;
+}
+
 .carousel-indicators {
 	opacity: 0;
 	transition: opacity 200ms;
@@ -42,58 +51,4 @@
 
 .carousel-indicators:hover {
 	opacity: 1;
-}
-
-.echoimg {
-	margin: 10px;
-	width: 100%;
-	border-radius: 20px;
-	border: 2px solid lightgray;
-}
-
-.drone {
-	/* position: absolute; */
-	margin-top: 12vh;
-	width: 80vw;
-	/* left: 50%; */
-	/* transform: translateX(-50%); */
-}
-
-.sianup {
-	position: relative;
-	margin-top: 20vh;
-	margin-left: 10vw;
-	margin-right: 3vw;
-	top: -15vh
-}
-
-.signtitle {
-	font-weight: normal
-}
-
-.cont {
-	font-family: Microsoft JhengHei;
-	font-size: 24px;
-}
-
-.ech {
-	font-size: 20px;
-	text-indent: -1em;
-	padding: 1em 1em 1em 2em;
-}
-
-.ech .fa {
-	width: 0.8em;
-	margin: 0;
-	padding: 0;
-	text-indent: 0em;
-}
-
-.chancol {
-	font-size: 30px;
-	color: #1eab45;
-}
-
-.myDiv:hover {
-	background: lightgrey;
 }

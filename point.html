@@ -1,174 +1,106 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-    <head>
-        <meta charset="utf-8" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <title>ECHO系統</title>
-        <script src="js/point.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
-        />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-        />
-        <link rel="stylesheet" type="text/css" href="css/point.css" />
-    </head>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
-    <body>
-        <nav class="navbar navbar-expand-md fixed-top">
-            <!--  Logo, 服務名字  -->
-            <a class="navbar-brand" href="index.html"><img src="res/logo_text.png" class="logo" /></a>
-            <a class="navbar-brand" href="index.html"><img src="res/logo_text.png" class="logo-text" /></a>
-            <!-- Underlined search bars -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
 
-            <div class="input-group rounded">
-                <input
-                    type="search"
-                    class="form-control rounded"
-                    placeholder="Search"
-                    aria-label="Search"
-                    aria-describedby="search-addon"
-                />
-                <span class="input-group-text border-0" id="search-addon">
-                    <i class="fa fa-search" aria-hidden="true"></i>
-                </span>
-            </div>
+	<title>積點模式</title>
+	<link href="res/icon.png" rel="icon">
 
-            <!-- navbar collapse -->
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarNav"
-                aria-controls="navbarNav"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-            >
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <!-- 選單 -->
-                <!-- 可能可以加dropdown(如果有需要) -->
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html"
-                            >首頁 </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="aboutus.html">關於我們<span class="sr-only"></span
-                            ></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="ECHO.html">ECHO系統</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="point.html">積點模式</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <div>
-            <br>
-            <br>
-            <div class="dis ">
-                <div class="sianup myDiv rounded-border">
-                  <br><h1 class="signtitle">標準積點模式</h1><br>
-                  <br>
-                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-                  <p class="ech"><i class="fa fa-thumb-tack"></i>以<span class="chancol"><strong>汽車碳足跡排放</strong></span>為基準，若該路程使用大眾交通運輸或步行等碳足跡排放比汽車少的交通方式，則將比起<span class="chancol"><strong>虛擬駕駛汽車</strong></span>減少的碳足跡數值轉為積點。
-                    </p>
-                </div>
-            
-            <div>
-                <div class="sianup myDiv rounded-border">
-                  <br><h1 class="signtitle">每周積點模式</h1><br>
-                  <br>
-                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-                  <p class="ech"><i class="fa fa-thumb-tack"></i>每周比前一周減少1公斤碳足跡，則可兌換1點；若相較前一周不減反增，則考量消費者持續使用之意願，將不予扣分。
-                    </p>
-                </div>
-            </div> 
-            </div>
-            
-            <div class="dis ">
-                <div><br><img src="res/Services/bus.jpg" class="echoimg"/></div>
-            
-            <div>
-                <div class="sianup myDiv rounded-border">
-                  <br><h1 class="signtitle">實際案例</h1><br>
-                  <br>
-                  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-                  <p class="ech"><i class="fa fa-thumb-tack"></i>今日曉華搭了公車3公里，那我們的系統會將這段路程的碳足跡與虛擬駕駛汽車3公里所形成的碳足跡進行比較，減少若為1公斤就轉換成1點。
-                    </p>
-                </div>
-            </div> 
-            </div>
-            <h1 class="signtitle">標準積點模式</h1><br>
-            <table>
-                <tr>
-                  <td>路程（公里）：</td>
-                  <td><input type="number" id="distance"></td>
-                </tr>
-                <tr>
-                  <td>汽車碳足跡排放（kg/km）：</td>
-                  <td><input type="number" id="car-emission"></td>
-                </tr>
-                <tr>
-                  <td>其他交通方式碳足跡排放（kg/km）：</td>
-                  <td><input type="number" id="other-transport-emission"></td>
-                </tr>
-              </table>
-              
-              <button onclick="calculatePoints()">計算</button>
-              
-              <table class="result-table">
-                <tr>
-                  <th>項目</th>
-                  <th>數值</th>
-                </tr>
-                <tr>
-                  <td>汽車碳足跡排放</td>
-                  <td id="car-footprint"></td>
-                </tr>
-                <tr>
-                  <td>其他交通方式碳足跡排放</td>
-                  <td id="other-transport-footprint"></td>
-                </tr>
-                <tr>
-                  <td>減少的碳足跡</td>
-                  <td id="carbon-saved"></td>
-                </tr>
-                <tr>
-                  <td>獲得的積點</td>
-                  <td id="points-earned"></td>
-                </tr>
-              </table>
-      <footer>
-            <div class="footer">
-                <div class="d-flex">
-                    <div class="container">
-                        <p>聯絡我們</p>
-                        <p>電話: 0970641090</p>
-<p>E-mail: <a href="mailto:a9648124@gmail.com">a9648124@gmail.com</a></p>
-                        <div class="icon">
-                            <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-instagram"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
-                        </div>
-                    </div>
-                    <div class="container ml-auto">
-                        <p>Get what you want, when you want it</p>
-                        <p>隱私權政策&emsp;cookie政策&emsp;網站使用說明&emsp;會員服務</p>
-                    </div>
-                </div>
-            </div>
-        </footer>
+	<link rel="stylesheet" type="text/css" href="css/point.css"/>
+</head>
 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
-        <script src="main.js"></script>
-    </body>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
+
+<div>
+	<br>
+	<br>
+	<div class="dis ">
+		<div class="sianup myDiv rounded-border">
+			<br>
+			<h1 class="signtitle">標準積點模式</h1><br>
+			<br>
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+			<p class="ech"><i class="fa fa-thumb-tack"></i>以<span class="chancol"><strong>汽車碳足跡排放</strong></span>為基準，若該路程使用大眾交通運輸或步行等碳足跡排放比汽車少的交通方式，則將比起<span
+					class="chancol"><strong>虛擬駕駛汽車</strong></span>減少的碳足跡數值轉為積點。
+			</p>
+		</div>
+
+		<div>
+			<div class="sianup myDiv rounded-border">
+				<br>
+				<h1 class="signtitle">每周積點模式</h1><br>
+				<br>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+				<p class="ech"><i class="fa fa-thumb-tack"></i>每周比前一周減少1公斤碳足跡，則可兌換1點；若相較前一周不減反增，則考量消費者持續使用之意願，將不予扣分。
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="dis ">
+		<div><br><img src="res/Services/bus.jpg" class="echoimg"/></div>
+
+		<div>
+			<div class="sianup myDiv rounded-border">
+				<br>
+				<h1 class="signtitle">實際案例</h1><br>
+				<br>
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+				<p class="ech"><i class="fa fa-thumb-tack"></i>今日曉華搭了公車3公里，那我們的系統會將這段路程的碳足跡與虛擬駕駛汽車3公里所形成的碳足跡進行比較，減少若為1公斤就轉換成1點。
+				</p>
+			</div>
+		</div>
+	</div>
+	<h1 class="signtitle">標準積點模式</h1><br>
+	<table>
+		<tr>
+			<td>路程（公里）：</td>
+			<td><input type="number" id="distance"></td>
+		</tr>
+		<tr>
+			<td>汽車碳足跡排放（kg/km）：</td>
+			<td><input type="number" id="car-emission"></td>
+		</tr>
+		<tr>
+			<td>其他交通方式碳足跡排放（kg/km）：</td>
+			<td><input type="number" id="other-transport-emission"></td>
+		</tr>
+	</table>
+
+	<button onclick="calculatePoints()">計算</button>
+
+	<table class="result-table">
+		<tr>
+			<th>項目</th>
+			<th>數值</th>
+		</tr>
+		<tr>
+			<td>汽車碳足跡排放</td>
+			<td id="car-footprint"></td>
+		</tr>
+		<tr>
+			<td>其他交通方式碳足跡排放</td>
+			<td id="other-transport-footprint"></td>
+		</tr>
+		<tr>
+			<td>減少的碳足跡</td>
+			<td id="carbon-saved"></td>
+		</tr>
+		<tr>
+			<td>獲得的積點</td>
+			<td id="points-earned"></td>
+		</tr>
+	</table>
+</div>
+
+<footer></footer>
+</body>
 </html>
