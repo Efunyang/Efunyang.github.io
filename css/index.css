@@ -1,0 +1,55 @@
+body {
+	background: #353433;
+}
+
+.slogan {
+	width: 100%;
+}
+
+.title {
+	margin: 2em 0 1em;
+}
+
+.title > span {
+	white-space: nowrap;
+	margin: 0 -1px;
+}
+
+#members .card {
+	--bs-card-bg: #202126;
+}
+
+#members .card .card-subtitle {
+	color: #BBB;
+}
+
+#members .card .card-img {
+	height: 200px;
+	overflow: hidden;
+}
+
+#members .card .card-img > img {
+	width: 200px;
+	/*height: 100%;*/
+	margin-left: 50%;
+	transform: translateX(-50%);
+}
+
+h1 {
+	font-size: 40px;
+	text-align: center;
+	text-decoration: underline;
+	text-underline-offset: 8px;
+	text-decoration-color: #f9d237;
+}
+
+.intro {
+	border: 2px solid lightgray;
+	border-radius: 10px;
+	padding: 1em;
+	--bs-card-bg: #3c3f40;
+}
+
+.intro .card-body {
+	font-size: 20px;
+}
