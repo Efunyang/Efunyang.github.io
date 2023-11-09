@@ -10,6 +10,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	<script src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="index.css"/>
 
 	<title>ECHO系統</title>
 	<link href="res/icon.png" rel="icon">
@@ -21,71 +23,53 @@
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-	<div class="container-fluid">
-		<a class="navbar-brand" href="">
-			<img src="res/logo.png" class="logo"/>
-			<img src="res/logo_text.png" class="logo-text"/>
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-				aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-			<div class="navbar-nav">
-				<a class="nav-link" href="index.html">首頁</a>
-				<a class="nav-link" href="aboutus.html">關於我們</a>
-				<a class="nav-link" href="ECHO.html">ECHO系統</a>
-				<a class="nav-link" href="point.html">積點模式</a>
-			</div>
-		</div>
-	</div>
-</nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
 
-<!--Intro-->
-<!--https://getbootstrap.com/docs/5.2/components/card/#horizontal -->
-<div class="intro card m-3">
-	<div class="row g-0">
-		<div class="col-md-3">
-			<!--https://getbootstrap.com/docs/5.2/components/carousel/#with-indicators -->
-			<div id="carouselAppUI" class="carousel slide h-100" data-bs-ride="true">
-				<div class="carousel-indicators">
-					<button type="button" data-bs-target="#carouselAppUI" data-bs-slide-to="0" class="active" aria-current="true"
-							aria-label="main page"></button>
-					<button type="button" data-bs-target="#carouselAppUI" data-bs-slide-to="1" aria-label="history"></button>
-				</div>
-				<div class="carousel-inner h-100">
-					<div class="carousel-item active">
-						<img src="./res/Services/main.png" class="d-block" alt="...">
+<div class="container">
+	<!--Intro-->
+	<!--https://getbootstrap.com/docs/5.2/components/card/#horizontal -->
+	<div class="intro card m-3">
+		<div class="row g-0">
+			<div class="col-md-3">
+				<!--https://getbootstrap.com/docs/5.2/components/carousel/#with-indicators -->
+				<div id="carouselAppUI" class="carousel slide h-100" data-bs-ride="true">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselAppUI" data-bs-slide-to="0" class="active" aria-current="true"
+								aria-label="main page"></button>
+						<button type="button" data-bs-target="#carouselAppUI" data-bs-slide-to="1" aria-label="history"></button>
 					</div>
-					<div class="carousel-item">
-						<img src="./res/Services/history.png" class="d-block" alt="...">
+					<div class="carousel-inner h-100">
+						<div class="carousel-item active">
+							<img src="./res/Services/main.png" class="d-block" alt="...">
+						</div>
+						<div class="carousel-item">
+							<img src="./res/Services/history.png" class="d-block" alt="...">
+						</div>
 					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselAppUI" data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselAppUI" data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
 				</div>
-				<button class="carousel-control-prev" type="button" data-bs-target="#carouselAppUI" data-bs-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Previous</span>
-				</button>
-				<button class="carousel-control-next" type="button" data-bs-target="#carouselAppUI" data-bs-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="visually-hidden">Next</span>
-				</button>
 			</div>
-		</div>
-		<div class="col-md-9">
-			<div class="card-body">
-				<h5 class="card-title">ECHO系統</h5>
-				<p class="card-text">
-					<i class="fa fa-thumb-tack"></i>我們主打易上手明瞭的軟體，讓使用者不會有過度複雜的操作困難，
-					因此我們的主頁面會顯示<span class="chancol"><strong>總減碳量</strong></span>
-					以及<span class="chancol"><strong>ECHO系統計算出的積點</strong></span>。
-				</p>
-				<p class="card-text">
-					<i class="fa fa-thumb-tack"></i>ECHO系統，藉由此系統的運用，使用者只需要在生活中打開<span
-						class="chancol"><strong>手機定位與網路</strong></span>
-					，並點選此按鍵，即可得知過往的使用交通方式、積點累積紀錄等。其方式是透過對「交通距離」、「交通工具」、「交通時間」計算出「交通時速」，
-					並以此對交通碳足跡進行推算，最後將其轉為碳足跡積點，並用柱狀圖顯示，另外點選各交通工具會顯示該交通工具在一天的停留地點並且實際共乘人數填寫。
-				</p>
+			<div class="col-md-9">
+				<div class="card-body">
+					<h5 class="card-title">ECHO系統</h5>
+					<p class="card-text">
+						<i class="fa fa-thumb-tack"></i> 主打易上手的軟體，不會有過度複雜的操作，主頁面會顯示<span class="chancol"><strong>總減碳量</strong></span>
+						以及<span class="chancol"><strong>ECHO積點</strong></span>。
+					</p>
+					<p class="card-text">
+						<i class="fa fa-thumb-tack"></i>ECHO系統，藉由此系統的運用，使用者只需要在生活中打開<span
+							class="chancol"><strong>手機定位與網路</strong></span>
+						，並點選此按鍵，即可得知過往的使用交通方式、積點累積紀錄等。其方式是透過對「交通距離」、「交通工具」、「交通時間」計算出「交通時速」，
+						並以此對交通碳足跡進行推算，最後將其轉為碳足跡積點，並用柱狀圖顯示，另外點選各交通工具會顯示該交通工具在一天的停留地點並且實際共乘人數填寫。
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -121,23 +105,6 @@
 <!--	<div><br><img src="res/Services/Carco2.jpg" class="echoimg rounded"/></div>-->
 <!--</div>-->
 
-<footer class="footer">
-	<div class="d-flex">
-		<div class="container">
-			<p>聯絡我們</p>
-			<p>電話: 0970641090</p>
-			<p>E-mail: <a href="mailto:a9648124@gmail.com">a9648124@gmail.com</a></p>
-			<!--<div class="icon">-->
-			<!--	<a href="#"><i class="fa fa-facebook"></i></a>-->
-			<!--	<a href="#"><i class="fa fa-instagram"></i></a>-->
-			<!--	<a href="#"><i class="fa fa-twitter"></i></a>-->
-			<!--</div>-->
-		</div>
-		<div class="container ml-auto">
-			<!--<p>Get what you want, when you want it</p>-->
-			<!--<p>隱私權政策&emsp;cookie政策&emsp;網站使用說明&emsp;會員服務</p>-->
-		</div>
-	</div>
-</footer>
+<footer></footer>
 </body>
 </html>

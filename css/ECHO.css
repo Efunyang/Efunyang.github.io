@@ -1,79 +1,6 @@
-html, body {
-	margin: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-}
-
-body {
-	font-size: 20px;
-	background: #b9b3b3;
-	font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-/*navbar*/
-.navbar {
-	--bs-navbar-padding-x: 5px;
-	--bs-navbar-padding-y: 5px;
-	box-shadow: 0 4px 4px rgba(225, 18, 18, 0.1);
-	left: 0;
-}
-
-.navbar .navbar-nav {
-	float: right;
-}
-
-.navbar .nav-link {
-	color: rgb(255, 255, 255);
-	display: inline-block;
-	position: relative;
-	right: auto;
-	font-size: 18px;
-}
-
-.navbar .nav-link::after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	transform: scaleX(0);
-	height: 2px;
-	bottom: 0;
-	left: 0;
-	color: #f9d237;
-	background-color: #f9d237;
-	transform-origin: bottom right;
-	transition: transform 0.25s ease-out;
-}
-
-.navbar .nav-link:hover::after {
-	transform: scaleX(1);
-	transform-origin: bottom left;
-}
-
-.navbar .logo {
-	height: 40px;
-	min-height: 1rem;
-}
-
-.navbar .logo-text {
-	height: 40px;
-	padding-left: 10px;
-	min-height: 1rem;
-}
-
-.navbar .nav-link {
-	font-size: 20px;
-	margin-left: 10px;
-}
-
 /*Body*/
 .intro {
 	border-radius: 20px;
-
-	@media only screen and (min-width: 900px) {
-		margin-left: 10% !important;
-		margin-right: 10% !important;
-	}
 }
 
 .intro .card-title {
@@ -85,9 +12,9 @@ body {
 }
 
 .intro .carousel-inner {
-	background: gray;
+	background: #888;
 	border-radius: 20px;
-	max-height: 50vh;
+	max-height: 60vh;
 
 	@media only screen and (min-width: 900px) {
 		max-height: 80vh;
@@ -108,6 +35,15 @@ body {
 	height: auto;
 }
 
+.carousel-indicators {
+	opacity: 0;
+	transition: opacity 200ms;
+}
+
+.carousel-indicators:hover {
+	opacity: 1;
+}
+
 .echoimg {
 	margin: 10px;
 	width: 100%;
@@ -121,118 +57,6 @@ body {
 	width: 80vw;
 	/* left: 50%; */
 	/* transform: translateX(-50%); */
-}
-
-/* Service */
-.serviceContainer {
-	top: 60px;
-	max-width: 75vw;
-	margin: 24px auto;
-	position: relative;
-}
-
-.serviceContainer .previous-btn,
-.serviceContainer .next-btn {
-	opacity: 0;
-	pointer-events: none;
-	transition: all 400ms ease;
-}
-
-.serviceContainer .previous-btn.active,
-.serviceContainer .next-btn.active {
-	opacity: 1;
-	pointer-events: auto;
-}
-
-
-.serviceContainer .previous-btn,
-.serviceContainer .next-btn {
-	width: 50px;
-	position: absolute;
-
-}
-
-.serviceContainer .previous-btn {
-	left: 8px;
-
-	top: 50%;
-	transform: translateY(-50%);
-	background: rgb(128, 128, 128);
-	color: #fff;
-	z-index: 2;
-	border-radius: 50%;
-	padding: 8px;
-	display: flex;
-	cursor: pointer;
-}
-
-.serviceContainer .next-btn {
-	right: 8px;
-
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: gray;
-	color: #fff;
-	z-index: 2;
-	border-radius: 50%;
-	padding: 8px;
-	display: flex;
-	cursor: pointer;
-
-}
-
-.serviceContainer .service {
-	height: 25vw;
-	width: 25vw;
-	flex-shrink: 0;
-}
-
-.serviceContainer .service img {
-	width: 100%;
-	height: 100%;
-	/* object-fit: cover; */
-}
-
-.serviceContainer .services {
-	display: flex;
-	gap: 8px;
-}
-
-.serviceContainer .content {
-	overflow-x: scroll;
-	scroll-behavior: smooth;
-}
-
-.serviceContainer .content::-webkit-scrollbar {
-	display: none;
-}
-
-
-/*footer*/
-footer {
-	/* height: 30vh; */
-	position: relative;
-	left: 0;
-	width: 100%;
-	background-color: #eff1f5;
-}
-
-footer .icon {
-	float: left;
-}
-
-footer .container {
-	padding: 10px;
-}
-
-
-.footer .d-flex {
-	padding: 60px 120px 0px;
-}
-
-.footer .d-flex .ml-auto {
-	text-align: right;
-	align-self: flex-end;
 }
 
 .sianup {
@@ -267,7 +91,7 @@ footer .container {
 
 .chancol {
 	font-size: 30px;
-	color: blue;
+	color: #1eab45;
 }
 
 .myDiv:hover {
