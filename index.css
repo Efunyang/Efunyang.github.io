@@ -1,3 +1,9 @@
+@font-face {
+	font-family: naikaifont;
+	font-display: swap;
+	src: url(https://cdn.jsdelivr.net/gh/max32002/naikaifont@1.0/webfont/NaikaiFont-Regular-Lite.woff2) format("woff2");
+}
+
 html, body {
 	margin: 0;
 	width: 100%;
@@ -9,7 +15,7 @@ html, body {
 body {
 	/*font-size: 20px;*/
 	background: #535353;
-	font-family: "sans serif", monospace;
+	font-family: sans-serif, monospace;
 }
 
 /*navbar*/
@@ -90,4 +96,10 @@ body > .container {
 /*footer*/
 footer {
 	--fa-li-margin: 0;
+}
+
+footer .info {
+	font-family: naikaifont, sans-serif, monospace;
+	font-size: 20px;
+	font-style: italic;
 }
