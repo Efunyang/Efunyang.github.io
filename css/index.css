@@ -24,7 +24,7 @@ body {
 }
 
 #members .card .card-img {
-	height: 200px;
+	height: 220px;
 	overflow: hidden;
 }
 
@@ -43,13 +43,69 @@ h1 {
 	text-decoration-color: #f9d237;
 }
 
-.intro {
-	border: 2px solid lightgray;
-	border-radius: 10px;
-	padding: 1em;
-	--bs-card-bg: #3c3f40;
+
+/*Body*/
+.intro, .calculate {
+	background: #303030;
+	--bs-card-border-radius: 20px;
 }
 
-.intro .card-body {
-	font-size: 20px;
+.intro .card-title {
+	font-size: 70px;
+	text-align: left;
 }
+.intro .card-sectext {
+	font-size: 35px;
+}
+.intro .card-text {
+	font-size: 20px;
+	color: #BBB;
+}
+
+.intro .carousel-inner {
+	border-radius: 20px;
+	max-height: 60vh;
+
+	@media only screen and (min-width: 900px) {
+		max-height: 80vh;
+	}
+}
+
+.intro .carousel-inner > .carousel-item {
+	height: 100%;
+}
+
+.intro .carousel-inner img {
+	border-radius: 20px;
+	margin: auto;
+	max-height: 100%;
+	max-width: 100%;
+	display: block;
+	width: auto;
+	height: auto;
+}
+
+.intro strong {
+	font-size: 30px;
+	color: #1eab45;
+}
+
+.carousel-indicators {
+	opacity: 0;
+	transition: opacity 200ms;
+}
+
+.carousel-indicators:hover {
+	opacity: 1;
+}
+.dot {
+	height: 15px;
+	width: 15px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+  }
+  .active {
+	background-color:#6CFD72;
+  }

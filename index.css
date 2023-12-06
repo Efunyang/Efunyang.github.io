@@ -29,7 +29,9 @@ body {
 	left: 0;
 	min-height: 60px;
 }
-
+.navbar-nav {
+	float: right;
+  }
 .navbar .nav-link {
 	color: #DDD;
 	display: inline-block;

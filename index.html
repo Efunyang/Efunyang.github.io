@@ -21,29 +21,80 @@
 
 <div class="container">
 	<img src="res/Home/slogan.png" class="slogan"/>
-	<div class="row justify-content-center mb-5">
-		<div class="intro card col-11 col-lg-8 mt-5">
-			<h1 class="card-title">服務宗旨</h1>
-			<div class="card-body">
-				X-TCF計畫的目標為「呈現使用者的交通碳足跡數值」、「增加使用者減碳的動力與機會」。第一項則是本團隊的核心技術，將希望藉由自身創立的演算法，來自動判斷使用者所使用的的過往交通方式、距離、時間等相關資料，並結合各時速下的各不同交通工具的碳足跡來計算出個人交通碳足跡；「增加使用者減碳的動力與機會」則是利用個人碳足跡數值設計相關積點機制，並將以此積點來換取合作商家商品或服務。
+	<!--Intro-->
+	<!--https://getbootstrap.com/docs/5.2/components/card/#horizontal -->
+	<div id= "TCF"class="intro card mt-3 mb-3">
+		<div class="row g-0">
+			<div class="col-md-3">
+				<div class="carousel-inner h-100">
+					<div class="carousel-item " data-bs-interval="5000">
+						<img src="./res/Services/main.png" class="" alt="">
+					</div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="./res/Services/history.png" class="" alt="">
+					</div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="./res/Services/exchange.png" class="" alt="">
+					</div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="./res/Services/convert.png" class="" alt="">
+					</div>
+				</div>
+				<div style="text-align:center">
+					  <span class="dot"></span>
+					  <span class="dot"></span>
+					  <span class="dot"></span>
+					  <span class="dot"></span>
+					</div>
+				
+			</div>
+			<script>
+				var slideIndex = 0;
+				showSlides();
+			  
+				function showSlides() {
+				  var i;
+				  var slides = document.getElementsByClassName("carousel-item");
+				  var dots = document.getElementsByClassName("dot");
+			  
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				  }
+			  
+				  slideIndex++;
+			  
+				  if (slideIndex > slides.length) {
+					slideIndex = 1;
+				  }
+			  
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+			  
+				  slides[slideIndex - 1].style.display = "block";
+				  dots[slideIndex - 1].className += " active";
+			  
+				  setTimeout(showSlides, 2000); // 切换图片的间隔时间，单位为毫秒
+				}
+			  </script>
+			<div class="col-md-2 d-flex align-items-center">
+				<div class="card-body pb-3">
+					<p class="card-sectext mb-5"> </p>
+				</div>
+			</div>
+			<div class="col-md-5 d-flex align-items-center">
+				<div class="card-body pb-5">
+					<h5 class="card-title ">TCF軟體</h5>
+					<h6 class="card-sectext mb-5">
+						自動記錄你的每日交通碳足跡
+					</h6>
+					<p class="card-text">
+						打開手機中的定位與網路，TCF即可藉由自製演算法來自動精準判斷你過往的交通方式、距離、時間等，並計算呈現你的每日交通碳足跡，再將你減少的碳足跡轉換成積點，壤你可以與我們的和啜商家換購商品。
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-	<h1 class="title">
-		<span>ECHO團隊核心成員</span>
-	</h1>
-	<div id="members" class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4"></div>
-	<div class="row justify-content-center mt-5 mb-5">
-		<div class="intro card col-11 col-lg-8">
-			<h1 class="card-title">團隊介紹</h1>
-			<div class="card-body"> 
-				ECHO團隊核心成員由不同領域的成大學生組成，ECHO在英文中寓意著「回聲」，四個英文字母也象徵著團隊全體成員在組織中所扮演的角色：執行者 (Executor)、創意者 (Creative)、傳聲者 (Herald)、組織者 (Organizer)，期許未來企劃皆能引起大家的「ECHO」。
-			<br> 組建的核心理念是想藉團隊之力，落實永續精神，因此在成立的過程中，成員單獨或一起先後於中鼎青年永續創新營、中鼎永續生活實驗室、教育部氣候變遷、台南市創新創業競賽等活動中提出相關永續創意構想，並也從中獲得不錯的成績，希望團隊的創意永續想法能夠有被曝光落實的一日。
-			</div>
-		</div>
-	</div>
-	<script src="js/mainPage.js"></script>
-</div>
 
 <div id="downloadModal"></div>
 <footer></footer>
