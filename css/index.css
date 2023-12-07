@@ -1,5 +1,5 @@
 body {
-	background: #353433;
+	background: #F5F5F5;
 }
 
 .slogan {
@@ -46,20 +46,22 @@ h1 {
 
 /*Body*/
 .intro, .calculate {
-	background: #303030;
+	background: #F5F5F5;
 	--bs-card-border-radius: 20px;
 }
 
 .intro .card-title {
 	font-size: 70px;
 	text-align: left;
+	color: #040404;
 }
 .intro .card-sectext {
 	font-size: 35px;
+	color: #040404;
 }
 .intro .card-text {
 	font-size: 20px;
-	color: #BBB;
+	color: #040404;
 }
 
 .intro .carousel-inner {
@@ -106,6 +108,9 @@ h1 {
 	display: inline-block;
 	transition: background-color 0.6s ease;
   }
-  .active {
+.active {
 	background-color:#6CFD72;
   }
+.butsize {
+ height: 100px;
+}
