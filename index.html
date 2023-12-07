@@ -18,21 +18,83 @@
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
-
+<img src="res/Home/slogan.png" class="slogan"/>
 <div class="container">
-	<img src="res/Home/slogan.png" class="slogan"/>
-	<div class="row justify-content-center mb-5">
-		<div class="intro card col-11 col-lg-8 mt-5">
-			<h1 class="card-title">服務宗旨</h1>
-			<div class="card-body">
-				X-TCF計畫的目標為「呈現使用者的交通碳足跡數值」、「增加使用者減碳的動力與機會」。第一項則是本團隊的核心技術，將希望藉由自身創立的演算法，來自動判斷使用者所使用的的過往交通方式、距離、時間等相關資料，並結合各時速下的各不同交通工具的碳足跡來計算出個人交通碳足跡；「增加使用者減碳的動力與機會」則是利用個人碳足跡數值設計相關積點機制，並將以此積點來換取合作商家商品或服務。
+	<div id= "TCF"class="row justify-content-center mb-5">
+		<div class="intro card mt-3 mb-3">
+		<div class="row g-0">
+			<div class="col-md-3">
+				<div class="carousel-inner h-100">
+					<div class="carousel-item " data-bs-interval="5000">
+						<img src="./res/Services/main.png" class="" alt="">
+					</div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="./res/Services/history.png" class="" alt="">
+					</div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="./res/Services/exchange.png" class="" alt="">
+					</div>
+					<div class="carousel-item" data-bs-interval="5000">
+						<img src="./res/Services/convert.png" class="" alt="">
+					</div>
+				</div>
+				<div style="text-align:center">
+					  <span class="dot"></span>
+					  <span class="dot"></span>
+					  <span class="dot"></span>
+					  <span class="dot"></span>
+					</div>
+				
+			</div>
+			<script>
+				var slideIndex = 0;
+				showSlides();
+			  
+				function showSlides() {
+				  var i;
+				  var slides = document.getElementsByClassName("carousel-item");
+				  var dots = document.getElementsByClassName("dot");
+			  
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				  }
+			  
+				  slideIndex++;
+			  
+				  if (slideIndex > slides.length) {
+					slideIndex = 1;
+				  }
+			  
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+			  
+				  slides[slideIndex - 1].style.display = "block";
+				  dots[slideIndex - 1].className += " active";
+			  
+				  setTimeout(showSlides, 2000); 
+				}
+			  </script>
+			<div class="col-md-2 d-flex align-items-center">
+				<div class="card-body pb-3">
+					<p class="card-sectext mb-5"> </p>
+				</div>
+			</div>
+			<div class="col-md-5 d-flex align-items-center">
+				<div class="card-body pb-5">
+					<h5 class="card-title "><b>TCF軟體</b></h5>
+					<h6 class="card-sectext mb-5">
+						自動記錄你的每日交通碳足跡
+					</h6>
+					<p class="card-text">
+						打開手機中的定位與網路，TCF即可藉由自製演算法來自動精準判斷你過往的交通方式、距離、時間等，並計算呈現你的每日交通碳足跡，再將你減少的碳足跡轉換成積點，讓你可以與我們的合作商家換購商品。
+					</p>
+					
+				</div>
 			</div>
 		</div>
 	</div>
-	<h1 class="title">
-		<span>ECHO團隊核心成員</span>
-	</h1>
-	<div id="members" class="row row-cols-2 row-cols-md-4 row-cols-lg-6 g-4"></div>
+	</div>
 	<div class="row justify-content-center mt-5 mb-5">
 		<div class="intro card col-11 col-lg-8">
 			<h1 class="card-title">團隊介紹</h1>
