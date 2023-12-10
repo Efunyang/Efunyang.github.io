@@ -154,8 +154,8 @@ h1 {
 	height: auto;
   }
   .image2_1 {
-	width: 700px;
-	height: 200px;
+	width: 44%;/*700px;*/
+	height: auto/*200px*/;
   }
   /*Third box*/
 .intro2 {
@@ -186,6 +186,6 @@ h1 {
 	height: auto;
   }
   .image3_1 {
-	width: 380px;
-	height: 207px;
+	width: 21%;/*380px;*/
+	height:auto; /*207px;*/
   }
