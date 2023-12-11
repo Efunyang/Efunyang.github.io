@@ -38,9 +38,7 @@ body {
 h1 {
 	font-size: 40px;
 	text-align: center;
-	text-decoration: underline;
-	text-underline-offset: 8px;
-	text-decoration-color: #f9d237;
+	color: #564E4E;
 }
 
 
@@ -189,3 +187,19 @@ h1 {
 	width: 21%;/*380px;*/
 	height:auto; /*207px;*/
   }
+  .imagemember {
+	width: 12%;/*380px;*/
+	height:auto; /*207px;*/
+	@media screen and (max-width: 1000px) {
+		width: 25%; 
+	}
+  }
+  .membera {
+	height: auto;
+    max-width: 90%;
+	@media screen and (max-width: 1000px) {
+		width: 95%; 
+	}
+   }
+
+

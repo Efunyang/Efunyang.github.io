@@ -15,86 +15,35 @@
 
 	<script src="js/co2cul.js"></script>
 
-	<link rel="stylesheet" type="text/css" href="css/ECHO.css"/>
+	<link rel="stylesheet" type="text/css" href="css/index.css"/>
 </head>
 
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark"></nav>
-
+	<br><br>
+	<h1 id="Mainmem">	
+		<img src="./res/AboutUs/核心成員.png" class="imagemember" alt="">
+	</h1>
+	<br>
 <div class="container">
 	<!--Intro-->
 	<!--https://getbootstrap.com/docs/5.2/components/card/#horizontal -->
+
 	<div class="intro card mt-3 mb-3">
-		<div class="row g-0">
-			<div class="col-md-3">
-				<!--https://getbootstrap.com/docs/5.2/components/carousel/#with-indicators -->
-				<div id="carouselAppUI" class="carousel slide h-100" data-bs-ride="carousel">
-					<div class="carousel-indicators">
-						<button type="button" data-bs-target="#carouselAppUI" data-bs-slide-to="0" class="active" aria-current="true" aria-label="main page"></button>
-						<button type="button" data-bs-target="#carouselAppUI" data-bs-slide-to="1" aria-label="history"></button>
-						<button type="button" data-bs-target="#carouselAppUI" data-bs-slide-to="2" aria-label="history"></button>
-						<button type="button" data-bs-target="#carouselAppUI" data-bs-slide-to="3" aria-label="history"></button>
-					</div>
-					<div class="carousel-inner h-100">
-						<div class="carousel-item active" data-bs-interval="5000">
-							<img src="./res/Services/main.png" class="" alt="">
-						</div>
-						<div class="carousel-item" data-bs-interval="5000">
-							<img src="./res/Services/history.png" class="" alt="">
-						</div>
-						<div class="carousel-item" data-bs-interval="5000">
-							<img src="./res/Services/exchange.png" class="" alt="">
-						</div>
-						<div class="carousel-item" data-bs-interval="5000">
-							<img src="./res/Services/convert.png" class="" alt="">
-						</div>
-					</div>
-					<button class="carousel-control-prev" type="button" data-bs-target="#carouselAppUI" data-bs-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Previous</span>
-					</button>
-					<button class="carousel-control-next" type="button" data-bs-target="#carouselAppUI" data-bs-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="visually-hidden">Next</span>
-					</button>
-				</div>
-			</div>
-			<div class="col-md-9 d-flex align-items-center">
+		<div class="row g-0 justify-content-center">
+			<div class="col-md-5 d-flex align-items-center">
 				<div class="card-body pb-5">
-					<h5 class="card-title mb-5">ECHO系統</h5>
-					<p class="card-text"><i class="fa fa-thumb-tack"></i>
-						主打易上手的軟體，無複雜的操作，主頁面顯示<strong>個人碳足跡</strong>以及<strong>ECHO積點</strong>。
-					</p>
-					<p class="card-text"><i class="fa fa-thumb-tack"></i>
-						使用者只需打開<strong>手機定位與網路</strong>即可得知過往的使用交通方式、交通碳足跡數值紀錄等。
-					</p>
+					<img src="./res/AboutUs/Group 46.png" class="membera" alt="">
 				</div>
-			</div>
+				</div>
+				<div class="col-md-5 d-flex align-items-center">
+					<div class="card-body pb-5">
+						<img src="./res/AboutUs/Group 47.png" class="membera" alt="">
+					</div>
+					</div>
 		</div>
 	</div>
 
-	<div class="calculate card mb-3" style="overflow: hidden">
-		<div class="d-flex flex-wrap flex-md-nowrap justify-content-between g-0">
-			<div class="">
-				<div class="card-body">
-					<h2 class="card-title">汽車碳足跡計算器</h2>
-					<div class="mb-3">
-						<label for="distance" class="form-label">每月行駛里程數（公里）：</label>
-						<input type="number" class="form-control" id="distance">
-					</div>
-					<div class="mb-3">
-						<label for="fuelEfficiency" class="form-label">汽車平均油耗（公升/百公里）：</label>
-						<input type="number" class="form-control" id="fuelEfficiency">
-					</div>
-					<button class="btn btn-primary mb-3" onclick="calculateCarbonFootprint()">計算</button>
-					<div id="result"></div>
-				</div>
-			</div>
-			<div class="">
-				<img src="res/Services/Carco2.jpg" class="rounded-4 mw-100" alt=""/>
-			</div>
-		</div>
-	</div>
 </div>
 
 <div id="downloadModal"></div>
