@@ -1,5 +1,5 @@
 body {
-	background: #F5F5F5;
+	background: #ffffff;
 }
 
 .slogan {
@@ -44,7 +44,7 @@ h1 {
 
 /*Body*/
 .intro, .calculate {
-	background: #F5F5F5;
+	background: #ffffff;
 	border:none;
 }
 
@@ -106,8 +106,9 @@ h1 {
 	transition: background-color 0.6s ease;
   }
 .active {
-	background-color:#6CFD72;
+	background-color:#ffffff;/*#6CFD72;*/
   }
+
 .butsize {
 	width: 200px;
     height: auto;
@@ -143,7 +144,7 @@ h1 {
 	width: 150%;/*700px;*/
 	height: auto/*200px*/;
 	@media screen and (max-width: 900px) {
-		width: 120%; 
+		width: 110%; 
 	}
   }
  
@@ -173,7 +174,7 @@ h1 {
   }
   /*Aboutus*/
   .imagemember {
-	width: 12%;/*380px;*/
+	width: 35%;/*380px;*/
 	height:auto; /*207px;*/
 	@media screen and (max-width: 1000px) {
 		width: 25%; 
@@ -187,4 +188,23 @@ h1 {
 	}
    }
 
+   .introECHO {
+	background:  #ffffff;
+	border:none;
+}
+.moremember {
+	height: auto;
+    max-width: 15%;
+	@media screen and (max-width: 1000px) {
+		width: 50%; 
+	}
+}
+.mainidea {
+	height: auto;
+    max-width: 90%;
+	@media screen and (max-width: 1000px) {
+		width: 110%; 
+	}
+   }
 
+/*ECHO 得獎照片*/
