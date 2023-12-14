@@ -145,7 +145,7 @@ h1 {
 .intro3 {
     background: linear-gradient(to right, hsl(0, 0%, 7%), hsl(270, 65%, 44%));
     border: none;
-	flex-direction: row-reverse; 
+	
 }
 .container3 {
 	display:flex; 
